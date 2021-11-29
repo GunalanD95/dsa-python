@@ -71,10 +71,11 @@ print("lis",liss)
 
 
 
-# lisr comprenhension
+# list comprenhension
 
 list_cmp = [1,2,3,4,5,6,7,8,9,10]
 
 sqrd_list = [i*i for i in list_cmp]
 print("sqrd list",sqrd_list)
+
 
