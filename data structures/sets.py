@@ -50,3 +50,10 @@ setB= {1,2,3,10,11,12}
 
 diff = setA.difference(setB) 
 print(diff)
+
+sm_diff = setA.symmetric_difference(setB)
+print(sm_diff)
+
+
+setA.update(setB)
+print(setA)
