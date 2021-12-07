@@ -15,5 +15,6 @@ def print_items_2(n):
 # print_items_2 is an example of big O(n)2+n
 
 # first for loop ran throught o(n2) times and then the second for loop ran throught o(n) times = o(n2+n)
+# but here the square is the standlone operation and we will drop the n = o(n)
 
 print_items_2(10)
