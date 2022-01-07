@@ -107,3 +107,9 @@ print("find the count of letter a", new.count('a'))
 re = "Spain"
 print(re.replace('Spain', 'France'))
 print(re)  # since strings are immutables we are not changing the original string, we can print it again
+
+
+# list with strings
+new_word = "Are you Okay?"
+new_list = list(new_word)
+print(new_list)
