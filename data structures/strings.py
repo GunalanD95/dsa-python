@@ -143,3 +143,14 @@ print(suffix_string.removesuffix("Deivaganapathy"),"pre_string")
 # replace a substring with another substring
 replace_string = "Gunalan Deivaganapathy"
 print(replace_string.replace("a", "@"),"replace_string")
+
+
+import re
+
+string_1 = "i love my job  but i want    to travel to    travel    tho"
+print(string_1.replace(" ", "-"),"replace_string_1") # replace every single spaces with -
+
+string_2 = re.sub("\s+", "-", string_1) # replace the all the spaces with -
+print(string_2,"replace_string_2")
+
+
