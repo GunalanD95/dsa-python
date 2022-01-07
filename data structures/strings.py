@@ -113,3 +113,33 @@ print(re)  # since strings are immutables we are not changing the original strin
 new_word = "Are you Okay?"
 new_list = list(new_word)
 print(new_list)
+
+
+# remove elements from a string
+
+dev = "www.gunalan.com"
+ksi = dev.strip('wcomg') # it will remove the wcomg letters from the string not as whole word but as a substring
+print(ksi,"ksi")
+
+
+# remove elements from a string from right side
+whitnoise = "       KING ALDO       "
+print(whitnoise.rstrip(),"rstrip")
+
+# remove elements from a string from left side
+blacknoise = "       KING ALDO       "
+print(whitnoise.lstrip(),"lstrip")
+
+
+# remove prefix from the string
+pre_string = "Gunalan Deivaganapathy"
+print(pre_string.removeprefix("Gunalan"),"pre_string")
+
+# remove suffix from the string
+suffix_string = "Gunalan Deivaganapathy"
+print(suffix_string.removesuffix("Deivaganapathy"),"pre_string")
+
+
+# replace a substring with another substring
+replace_string = "Gunalan Deivaganapathy"
+print(replace_string.replace("a", "@"),"replace_string")
