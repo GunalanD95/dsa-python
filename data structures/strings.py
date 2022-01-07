@@ -153,4 +153,40 @@ print(string_1.replace(" ", "-"),"replace_string_1") # replace every single spac
 string_2 = re.sub("\s+", "-", string_1) # replace the all the spaces with -
 print(string_2,"replace_string_2")
 
+string_3 = re.sub("\s+", "-", string_1) # replace the all the spaces with -
+print(string_2,"replace_string_2")
 
+
+#maxsplit in string
+# split function will basically return a list of substrings
+
+max_split = "www.toniandguy.com"
+print(max_split.split(".", maxsplit=1)) # split the string with . and maxsplit is 1
+print(max_split.split(".", maxsplit=2)) # split the string with . and maxsplit is 2
+
+
+
+# .join method in strings
+
+list_1 = ["Gunalan", "Deivaganapathy"]
+print(" ".join(list_1),"join method") # join the list of elements into a single string with space
+
+# partition method in strings
+
+part_string = "Gunalan Deivaganapathy"
+print(part_string.partition(" ")) # just like split method but it will return a tuple of 3 elements
+
+
+# ljust , rjust and center method in strings
+just_string = "Gunalan Deivaganapathy"
+print(just_string.ljust(50, "*")) # ljust will add the len(50) * to the right side of the string
+
+print(just_string.rjust(50, "*")) # rjust will add the len(50) * to the left side of the string
+
+print(just_string.center(50, "*")) # center will add the len(50) * to the both left and right of the string
+
+
+# zfill method in strings
+
+num_z = "123"
+print(num_z.zfill(10)) # zfill will add the 0 to the left side of the string until the len(10)
