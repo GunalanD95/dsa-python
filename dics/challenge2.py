@@ -20,6 +20,8 @@ for data in csvreader:
     if key not in dics:
         value = data[1]
         dics[key] = value
+
+    # if duplicate keys, add value 
     else:
         value = data[1]
         prev_count = dics[key]
