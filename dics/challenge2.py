@@ -1,15 +1,10 @@
 import os
 import csv
 
-cd = os.getcwd()
-print("current directory",cd)
-
 # changing directory to exercise directory
+cd = os.getcwd()
 os.chdir(cd + "\Exercise Files")
 print("os.chdir",os.getcwd())
-
-# list all files in the directorys
-print("os.listdir",os.listdir())
 
 
 # reading the file and appending to a dictionary
@@ -19,7 +14,15 @@ csvreader = csv.reader(file)
 dics = {}
 for data in csvreader:
     key = data[0]
-    value = data[1]
-    dics.update({key:value})
+
+    # checking for duplicate keys
+
+    if key not in dics:
+        value = data[1]
+        dics[key] = value
+    else:
+        value = data[1]
+        prev_count = dics[key]
+        dics[key] = int(prev_count) + int(value)
 
 print("dics",dics)
